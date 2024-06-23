@@ -44,3 +44,27 @@ print(f"Result {result}")
 
 
 # question 1 task 3
+
+import pdb
+
+operation = input("What operation would you like to use?")
+num1 = float(input("Enter the first number you would like to use: "))
+num2 = float(input("Enter the second number you would like to use: "))
+
+if operation == "addition":
+    result = num1 + num2
+
+elif operation == "subtraction":
+    result = num1 - num2
+
+elif operation == "multiplication":
+    result = num1 * num2
+
+elif operation == "division":
+    if num1 or num2 ==0:
+        print("Invalid")
+    else:
+     result = num1 / num2
+
+else:
+    print("Sorry, that operation cannot be performed.")
